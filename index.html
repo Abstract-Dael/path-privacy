@@ -1,4 +1,4 @@
-<artifacts identifier="path-privacy-policy" type="text/html" title="Path Privacy Policy">
+<artifact identifier="path-privacy-policy-v2" type="text/html" title="Path Privacy Policy - Accurate Version">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +60,10 @@
         color: #444;
     }
     
+    strong {
+        color: #1a1a1a;
+    }
+    
     a {
         color: #007AFF;
         text-decoration: none;
@@ -67,6 +71,13 @@
     
     a:hover {
         text-decoration: underline;
+    }
+    
+    .highlight-box {
+        background-color: #e8f5e9;
+        border-left: 4px solid #4caf50;
+        padding: 16px;
+        margin: 20px 0;
     }
     
     .contact {
@@ -94,147 +105,176 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: December 2024</p>
-    <p>At Path, we believe your personal information belongs to you. This Privacy Policy explains what data we collect, how we use it, and your rights regarding your information.</p>
+        <p class="last-updated">Last Updated: September 2025</p>
+    <div class="highlight-box">
+        <p><strong>Your privacy matters.</strong> Path stores your goals, progress, and personal media exclusively on your device. We only collect what's necessary to provide authentication, and we never sell your data to third parties.</p>
+    </div>
+    
+    <h2>Overview</h2>
+    <p>Path is designed with privacy as a core principle. Unlike many apps, we store nearly all of your data locally on your device, not in the cloud. This means your goals, progress, and personal photos stay with you.</p>
     
     <h2>Information We Collect</h2>
     
-    <p><strong>Account Information:</strong> When you create an account using Sign in with Apple or Google Sign-In, we collect:</p>
+    <p><strong>Authentication Information (Stored in Firebase):</strong></p>
+    <p>When you sign in with Apple, we collect only what's needed to create and maintain your account:</p>
     <ul>
-        <li>Your unique user ID</li>
-        <li>Email address (if provided)</li>
-        <li>Display name (if provided)</li>
+        <li>Your unique user identifier</li>
+        <li>Your email address</li>
+        <li>Your display name</li>
+    </ul>
+    <p>This information is stored securely in Firebase Authentication.</p>
+    
+    <p><strong>Goal and Progress Data (Stored Locally on Your Device):</strong></p>
+    <p>All of your actual app content is stored exclusively on your device:</p>
+    <ul>
+        <li>Goal titles and target numbers</li>
+        <li>Your personal reasons and meanings for each goal</li>
+        <li>Daily progress entries, including amounts and dates</li>
+        <li>Mood selections and personal notes</li>
+        <li>Completion status and tracking history</li>
+    </ul>
+    <p><strong>Important:</strong> This data is not uploaded to our servers or synced to the cloud. It exists only on your device.</p>
+    
+    <p><strong>"Remember Your Why" Photos and Videos (Stored Locally):</strong></p>
+    <p>When you save photos or videos as motivational reminders:</p>
+    <ul>
+        <li>These files are stored in your device's local cache</li>
+        <li>They are never uploaded to any server or cloud storage</li>
+        <li>Only you can access these files</li>
+        <li>They will be deleted if you delete the app</li>
     </ul>
     
-    <p><strong>Goal Data:</strong> To provide our goal tracking functionality, we store:</p>
+    <p><strong>Usage Information:</strong></p>
+    <p>We collect minimal analytics to help us understand how Path is used and to fix bugs:</p>
     <ul>
-        <li>Goal titles and descriptions</li>
-        <li>Target numbers and units</li>
-        <li>Your personal reasons/meanings for each goal</li>
-        <li>Progress entries (dates, amounts, mood selections, and notes)</li>
-        <li>Start dates and completion status</li>
+        <li>Device type and iOS version</li>
+        <li>App version and crash reports</li>
+        <li>General feature usage (which screens are visited)</li>
     </ul>
-    
-    <p><strong>Remember Your Why (RYW) Media:</strong> When you choose to upload photos or videos as motivational anchors:</p>
-    <ul>
-        <li>Images and videos you select from your device</li>
-        <li>These files are stored securely and are only accessible by you</li>
-        <li>We do not scan, analyze, or use this media for any purpose other than displaying it to you</li>
-    </ul>
-    
-    <p><strong>Usage Data:</strong> We collect basic analytics to improve the app:</p>
-    <ul>
-        <li>App opens and session duration</li>
-        <li>Feature usage (which screens you visit)</li>
-        <li>Device type and operating system version</li>
-        <li>Crash reports and error logs</li>
-    </ul>
+    <p>This data is anonymized and cannot be used to identify you personally.</p>
     
     <h2>How We Use Your Information</h2>
     
-    <p>We use your data solely to:</p>
+    <p>We use the information we collect to:</p>
     <ul>
-        <li>Provide and maintain the Path app functionality</li>
-        <li>Sync your goals and progress across your devices</li>
-        <li>Display your "Remember Your Why" media back to you</li>
-        <li>Send you notifications about your goals (only if you enable them)</li>
-        <li>Improve app performance and fix bugs</li>
-        <li>Provide customer support when you contact us</li>
+        <li>Authenticate your identity when you sign in</li>
+        <li>Display your goals and progress back to you</li>
+        <li>Show your personal photos and videos in the app</li>
+        <li>Improve app stability and performance</li>
+        <li>Provide customer support when requested</li>
     </ul>
     
-    <p><strong>We do NOT:</strong></p>
+    <p><strong>We never:</strong></p>
     <ul>
-        <li>Sell your personal information to third parties</li>
-        <li>Use your goals or progress data for advertising</li>
+        <li>Sell your information to third parties</li>
+        <li>Use your goals or progress for advertising</li>
         <li>Share your data with other users</li>
-        <li>Analyze the content of your photos or videos</li>
-        <li>Train AI models on your personal data</li>
+        <li>Access or analyze your personal photos or videos</li>
+        <li>Track your behavior across other apps or websites</li>
     </ul>
     
     <h2>Data Storage and Security</h2>
     
-    <p>Your data is stored securely using Firebase (Google Cloud Platform), which provides:</p>
+    <p><strong>Cloud Storage (Firebase Authentication Only):</strong></p>
+    <p>Your authentication credentials are securely stored in Firebase, which provides:</p>
     <ul>
         <li>Encryption in transit and at rest</li>
-        <li>Regular security audits and updates</li>
-        <li>Industry-standard data protection measures</li>
+        <li>Industry-standard security protocols</li>
+        <li>Regular security audits by Google</li>
     </ul>
     
-    <p>Your "Remember Your Why" photos and videos are stored in Firebase Storage with restricted access - only you can view your own media.</p>
+    <p><strong>Local Device Storage:</strong></p>
+    <p>The majority of your data—including all goals, progress entries, and personal media—is stored exclusively on your device using:</p>
+    <ul>
+        <li>iOS secure file system</li>
+        <li>Your device's built-in encryption</li>
+        <li>Standard iOS security protections</li>
+    </ul>
+    
+    <p><strong>What This Means for You:</strong></p>
+    <ul>
+        <li>Your personal data never leaves your device</li>
+        <li>We cannot access your goals, progress, or photos</li>
+        <li>Your data will not sync across multiple devices</li>
+        <li>Deleting the app will permanently remove all local data</li>
+        <li>Backing up your device with iCloud will preserve your data</li>
+    </ul>
     
     <h2>Third-Party Services</h2>
     
-    <p>Path uses the following third-party services:</p>
+    <p>Path uses minimal third-party services:</p>
     <ul>
-        <li><strong>Firebase (Google):</strong> Authentication, database, and file storage</li>
-        <li><strong>Apple Sign-In:</strong> Secure authentication</li>
+        <li><strong>Firebase Authentication (Google):</strong> Securely manages your sign-in credentials</li>
+        <li><strong>Sign in with Apple:</strong> Provides authentication without sharing unnecessary personal information</li>
     </ul>
     
     <p>These services have their own privacy policies:</p>
     <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
         <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
     </ul>
     
-    <h2>Your Rights and Choices</h2>
+    <h2>Your Rights and Control</h2>
     
-    <p><strong>Access and Export:</strong> You can view all your data within the app at any time.</p>
+    <p><strong>Access Your Data:</strong> All your data is visible within the app at any time. Your goals, progress, and media are always accessible to you.</p>
     
-    <p><strong>Deletion:</strong> You can delete individual goals, progress entries, or media files at any time. To delete your entire account and all associated data, use the "Delete Account" option in Settings.</p>
+    <p><strong>Delete Your Data:</strong></p>
+    <ul>
+        <li>Delete individual goals, progress entries, or photos anytime from within the app</li>
+        <li>Delete your entire account from Settings, which removes your authentication credentials from our servers</li>
+        <li>Uninstall the app to remove all locally stored data from your device</li>
+    </ul>
     
-    <p><strong>Account Disconnection:</strong> You can disconnect your Apple or Google account from Settings.</p>
+    <p><strong>Disconnect Your Account:</strong> You can sign out or disconnect your Apple ID from Settings at any time.</p>
     
-    <p><strong>Notifications:</strong> You can disable notifications through your device settings.</p>
+    <p><strong>Control Notifications:</strong> Manage notification preferences through your iOS Settings app.</p>
     
     <h2>Data Retention</h2>
     
-    <p>We retain your data for as long as your account is active. When you delete your account, we permanently delete all your personal information within 30 days, including:</p>
+    <p>Because most of your data is stored locally on your device, it remains there until you delete it or uninstall the app.</p>
+    
+    <p>For data we store in Firebase (authentication only):</p>
     <ul>
-        <li>All goal data and progress entries</li>
-        <li>All uploaded photos and videos</li>
-        <li>Your account information</li>
+        <li>Your account information is retained as long as your account is active</li>
+        <li>When you delete your account, we permanently remove your authentication data within 30 days</li>
+        <li>Anonymized crash reports and analytics may be retained for up to 90 days</li>
     </ul>
-    
-    <p>Some anonymized analytics data may be retained for up to 90 days for service improvement purposes.</p>
-    
-    <h2>Children's Privacy</h2>
-    
-    <p>Path is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
-    
-    <h2>International Users</h2>
-    
-    <p>Path is available worldwide. Your data may be stored and processed in the United States or other countries where Firebase operates. By using Path, you consent to the transfer of your data to these locations.</p>
     
     <h2>Changes to This Policy</h2>
     
-    <p>We may update this Privacy Policy occasionally. We will notify you of any material changes by:</p>
+    <p>We may update this Privacy Policy from time to time. When we make changes, we will:</p>
     <ul>
-        <li>Posting the new policy in the app</li>
-        <li>Updating the "Last Updated" date</li>
-        <li>Sending an in-app notification (for significant changes)</li>
+        <li>Update the "Last Updated" date at the top of this page</li>
+        <li>Notify you through the app if changes are significant</li>
+        <li>Post the updated policy at this URL</li>
     </ul>
     
-    <p>Your continued use of Path after changes constitutes acceptance of the updated policy.</p>
+    <p>Your continued use of Path after any changes indicates your acceptance of the updated policy.</p>
     
-    <h2>California Privacy Rights</h2>
+    <h2>International Users</h2>
     
-    <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+    <p>Path is available worldwide. Your authentication data may be processed in the United States or other countries where Firebase operates. By using Path, you consent to the transfer of your authentication information to these locations. Your goals, progress, and media remain on your local device regardless of your location.</p>
+    
+    <h2>California Privacy Rights (CCPA)</h2>
+    
+    <p>If you're a California resident, you have specific rights under the California Consumer Privacy Act:</p>
     <ul>
-        <li>Right to know what personal information we collect</li>
-        <li>Right to delete your personal information</li>
-        <li>Right to opt-out of the sale of personal information (we don't sell your data)</li>
-        <li>Right to non-discrimination for exercising your privacy rights</li>
+        <li><strong>Right to Know:</strong> You can request information about what personal data we've collected</li>
+        <li><strong>Right to Delete:</strong> You can request deletion of your personal information</li>
+        <li><strong>Right to Opt-Out:</strong> We don't sell personal information, so there's nothing to opt out of</li>
+        <li><strong>Right to Non-Discrimination:</strong> We won't discriminate against you for exercising your privacy rights</li>
     </ul>
+    
+    <p>To exercise these rights, contact us at the email address below.</p>
     
     <div class="contact">
         <h2>Contact Us</h2>
-        <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
+        <p>If you have any questions about this Privacy Policy or how we handle your data, please reach out:</p>
         <p>
-            <strong>Email:</strong> <a href="mailto:privacy@path-app.com">privacy@path-app.com</a><br>
-            <strong>Support:</strong> <a href="mailto:support@path-app.com">support@path-app.com</a>
+            <strong>Email:</strong> <a href="mailto:mistbreathfreshener@gmail.com">mistbreathfreshener@gmail.com</a><br>
         </p>
     </div>
 </div>
 </body>
 </html>
-</artifacts>
+</artifact>
